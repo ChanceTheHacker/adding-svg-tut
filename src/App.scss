@@ -16,11 +16,18 @@
   letter-spacing: 0.3vmin;
 }
 
+//These variables will change the background
+$backgroundColor: $white;
+$backgroundImg: none;
+//Alter the variables above!
+
+
 .App-background {
   //use mixin to add text shadows
   @include textShadow;
   //set background color here with a Sass variable
-  background-color: $red;
+  background-color: $backgroundColor;
+  background-image: $backgroundImg;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
