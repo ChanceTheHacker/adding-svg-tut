@@ -1,0 +1,26 @@
+//mixins (These are awesome, they "mix in" your commonly used styles to other classes)
+@mixin flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin addBorder {
+  border-left: 1vw solid $brown;
+  border-right: 1vw solid $brown;
+  border-top: 1vw solid $brown;
+  border-bottom: 1vw solid $brown;
+}
+
+@mixin textShadow {
+  text-shadow: -0.5vmax -0.1vmax 0 $brown, 0.1vmax -0.1vmax 0 $brown,
+    -0.1vmax 0.1vmax 0 $brown, 0.1vmax 0.1vmax 0 $brown;
+}
+
+@mixin addPadding {
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  padding-left: 2vw;
+  padding-right: 2vw;
+}

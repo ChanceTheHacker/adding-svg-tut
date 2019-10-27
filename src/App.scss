@@ -1,0 +1,50 @@
+//import font from google fonts
+@import url('https://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps&display=swap');
+
+// variables (I've included lots of fun colors to toy with if you want)
+@import './sass/variables.scss';
+
+//mixins (These are awesome, they "mix in" your commonly used styles to other classes)
+@import './sass/mixins.scss';
+
+
+
+//page css starts
+.App {
+  text-align: center;
+  font-family: 'Oleo Script Swash Caps', cursive;
+}
+
+.App-background {
+  //use mixin to add text shadows
+  @include textShadow;
+  //set background color here with a Sass variable
+  background-color: $red;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  //set text color here with a Sass variable
+  color: $yellow;
+}
+
+.container {
+  //use the flex mixin style to give container class flex properties I want
+  @include flex;
+  //use mixin to add border
+  @include addBorder;
+  //use mixin to add padding
+  @include addPadding;
+  //set background color here with a Sass variable
+  background: $white;
+  margin: auto;
+  max-height: 80vh;
+  max-width: 80vw;
+}
+
+.App-logo {
+  max-width: 80vw;
+  max-height: 60vh;
+}
