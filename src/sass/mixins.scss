@@ -13,9 +13,14 @@
   border-bottom: 1vw solid $brown;
 }
 
+
+//change these variables to alter the text shadow
+$shadowColor: $brown;
+$shadowOffset: 0.2vmin;
+
 @mixin textShadow {
-  text-shadow: -0.4vmax -0.1vmax 0 $brown, 0.1vmax -0.1vmax 0 $brown,
-    -0.1vmax 0.1vmax 0 $brown, 0.1vmax 0.1vmax 0 $brown;
+  text-shadow: -0.4vmin (-1 * $shadowOffset) 0 $shadowColor, $shadowOffset (-1 * $shadowOffset) 0 $shadowColor,
+    (-1 * $shadowOffset) $shadowOffset 0 $shadowColor, $shadowOffset $shadowOffset 0 $shadowColor;
 }
 
 @mixin addPadding {
