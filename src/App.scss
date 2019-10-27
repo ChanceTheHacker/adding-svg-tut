@@ -1,5 +1,5 @@
 //import font from google fonts
-@import url('https://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Bangers");
 
 // variables (I've included lots of fun colors to toy with if you want)
 @import './sass/variables.scss';
@@ -12,7 +12,8 @@
 //page css starts
 .App {
   text-align: center;
-  font-family: 'Oleo Script Swash Caps', cursive;
+  font-family: 'Bangers', cursive;
+  letter-spacing: 0.3vmin;
 }
 
 .App-background {
@@ -44,7 +45,17 @@
   max-width: 80vw;
 }
 
-.App-logo {
+.App-ad {
   max-width: 80vw;
   max-height: 60vh;
+}
+
+.title {
+  text-decoration: underline;
+}
+
+.title,
+.subtitle {
+  padding: 0;
+  margin: 1vmin;
 }

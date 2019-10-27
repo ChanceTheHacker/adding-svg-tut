@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "./images/donut.jpeg";
+import ad from "./images/donut.jpeg";
 import "./App.scss";
 
 function App() {
@@ -7,8 +7,9 @@ function App() {
     <div className="App">
       <header className="App-background">
         <div className="container">
-          <h1>Step right up! Read all about it!</h1>
-          <img src={logo} className="App-logo" alt="logo" />
+          <h1 className="title">Peppy Donuts</h1>
+          <h2 className="subtitle">The donuts that make you GO NUTS!</h2>
+          <img src={ad} className="App-ad" alt="ad" />
         </div>
       </header>
     </div>

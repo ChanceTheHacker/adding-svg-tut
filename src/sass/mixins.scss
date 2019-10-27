@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 @mixin addBorder {
@@ -14,7 +14,7 @@
 }
 
 @mixin textShadow {
-  text-shadow: -0.5vmax -0.1vmax 0 $brown, 0.1vmax -0.1vmax 0 $brown,
+  text-shadow: -0.4vmax -0.1vmax 0 $brown, 0.1vmax -0.1vmax 0 $brown,
     -0.1vmax 0.1vmax 0 $brown, 0.1vmax 0.1vmax 0 $brown;
 }
 
